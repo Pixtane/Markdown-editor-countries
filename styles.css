@@ -1,0 +1,186 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    height: 80%;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.left {
+    flex-basis: 50%;
+    padding: 20px;
+    overflow-y: scroll;
+}
+
+.right {
+    flex-basis: 50%;
+    padding: 20px;
+    overflow-y: scroll;
+}
+
+textarea {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    border: none;
+    font-size: 16px;
+    line-height: 1.5;
+    resize: none;
+}
+
+#map_choose {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+}
+
+code {  
+    padding: 3px;
+    border-radius: 3px;
+    font-family: monospace;
+    font-size: 14px;
+}
+
+textarea:focus {
+    outline: none;
+    border: none;
+}
+
+/* For webkit-based browsers */
+::-webkit-scrollbar {
+    width: 0;
+}
+
+/* Menu */
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    padding-top: 23px;
+}
+
+.menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.menu li {
+    margin-right: 20px;
+}
+
+#name {
+    height: 40px;
+    font-size: 18px;
+    border-radius: 30px;
+    padding-left: 20px;
+}
+
+#map_btn {
+    height: 40px;
+    font-size: 18px;
+    border-radius: 30px;
+    padding: 0 20px 0 20px;
+}
+
+
+/* Sidebar */
+#sidebar {
+    position: fixed;
+    top: 0;
+    left: -195px;
+    width: 200px;
+    height: 100%;
+    padding: 20px;
+    z-index: 1;
+}
+
+#sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    -webkit-user-select: none;
+    /* Safari */
+    -moz-user-select: none;
+    /* Firefox */
+    -ms-user-select: none;
+    /* IE10+/Edge */
+    user-select: none;
+    /* Standard */
+}
+
+#drag-area {
+    position: absolute;
+    top: 0;
+    right: -7.5px;
+    height: 100%;
+    width: 0px;
+}
+
+#center-dragger {
+    position: absolute;
+    right: -10px;
+    top: 47%;
+    transform: translateY(-50%);
+    height: 40px;
+    width: 20px;
+    border-radius: 30px;
+    cursor: grab;
+  }
+  
+
+
+.menu-item {
+    display: block;
+    margin: 5px auto 0;
+    width: 100%;
+
+    border-radius: 15px;
+    height: 4%;
+}
+
+#add_art {
+    position: absolute;
+    bottom: 0;
+    left: 0px;
+    height: 5vh;
+    width: 100%;
+    border-radius: 0px;
+    border-width: 1px 0px 0px 0px;
+    border-style: solid;
+}
+
+/* Button styling */
+
+button {
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}

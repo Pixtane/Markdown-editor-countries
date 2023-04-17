@@ -1,0 +1,62 @@
+/* Default styles for toggle switch */
+.toggle-switch {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  
+  .toggle-switch label {
+    display: inline-block;
+    position: relative;
+    width: 50px;
+    height: 24px;
+  }
+  
+  .toggle-switch input[type="checkbox"] {
+    display: none;
+  }
+  
+  /* Custom styles for slider */
+  .toggle-switch .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #fff;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 24px;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Custom styles for slider when in "checked" state */
+  .toggle-switch input[type="checkbox"]:checked + .slider {
+    background-color: #333;
+  }
+  
+  /* Custom styles for slider thumb */
+  .toggle-switch .slider::before {
+    position: absolute;
+    content: "";
+    height: 18px;
+    width: 18px;
+    left: 3px;
+    bottom: 3px;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 50%;
+  }
+  
+  /* Custom styles for slider thumb when in "checked" state */
+  .toggle-switch input[type="checkbox"]:checked + .slider::before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+    background-color: #525252;
+  }
+  
